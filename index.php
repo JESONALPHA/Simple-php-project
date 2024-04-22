@@ -2,11 +2,12 @@
 
 require_once './src/RandomQuotes.php' ;
 
-$rq= new \RandomQuotes\RandomQuotes ;
+//create a new object of RandomQuotes class 
+$rq = new \RandomQuotes\RandomQuotes ;
 
-echo $rq->generate() ;
+//generate a new Quote
 
-
+echo $rq->generate()
 
 
 
