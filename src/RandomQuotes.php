@@ -5,7 +5,7 @@ namespace RandomQuotes ;
 
 class RandomQuotes {
 //create the public function that import the json file
-    public function getRandomQuotes(){
+    public function getRandomQuotes(){ 
 
 //inside the function get the list of Quotes
   $quotes= file_get_contents(__DIR__ . '/../inc/quotes.json') ;
@@ -15,6 +15,8 @@ class RandomQuotes {
 //get a random index number
 
   $index = mt_rand(0 ,count($quotes));
+
+  return $quotes[$index];
 }
 
 
