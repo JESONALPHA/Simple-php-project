@@ -8,7 +8,7 @@ class RandomQuotes {
     public function getRandomQuotes(){
 
         //inside the function get the list of Quotes
-        $quotes= file_get_contents( '/../inc/quotes.json' ) ;
+        $quotes= file_get_contents( __DIR__ . '/../inc/quotes.json' ) ;
 
         //convert the json file to a php array
         $quotes = json_decode($quotes ,true);

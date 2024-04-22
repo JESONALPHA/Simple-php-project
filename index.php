@@ -7,7 +7,7 @@ $rq = new \RandomQuotes\RandomQuotes ;
 
 //generate a new Quote
 
-echo $rq->generate()
+print_r($rq->generate());
 
 
 
